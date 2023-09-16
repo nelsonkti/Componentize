@@ -1,0 +1,36 @@
+{
+  "name": "nelsons/componentize",
+  "description": "componentize is a combination of componentization and modularization",
+  "keywords": [
+    "componentize",
+    "nelsons"
+  ],
+  "license": "MIT",
+  "support": {
+    "email": "nelsons.goole@gmail.com"
+  },
+  "authors": [
+    {
+      "name": "nelsons",
+      "email": "nelsons.goole@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.1",
+    "mockery/mockery": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nelsons\\Componentize\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.0"
+    }
+  },
+  "prefer-stable": true
+}
