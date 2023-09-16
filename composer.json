@@ -27,10 +27,5 @@
       "Nelsons\\Componentize\\": "src/"
     }
   },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "v1.0.0"
-    }
-  },
   "prefer-stable": true
 }
