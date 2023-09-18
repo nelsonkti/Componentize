@@ -98,10 +98,3 @@ $grid->import(function (Grid\Import $import) {
 $grid->panel('statistics_list')->template('xxxxx');
 $grid->echarts('order_statistic')->type('line');
 ```
-
-## License
-
-This library is open-source and available under the [MIT License](LICENSE).
-```
-
-This Markdown file provides an overview of the library, how to install it, its requirements, usage example, support information, contributing guidelines, and licensing details. Make sure to customize it further based on your specific library's features and requirements.
