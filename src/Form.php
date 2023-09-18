@@ -140,6 +140,6 @@ class Form
             return $element;
         }
 
-        Exception("Form's Field type [$method] does not exists");
+        throw new \Exception("Form's Field type [$method] does not exists");
     }
 }

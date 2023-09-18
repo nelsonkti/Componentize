@@ -127,6 +127,6 @@ class Filter
             return $element;
         }
 
-        Exception("Field type [$method] does not exists");
+        throw new \Exception("Field type [$method] does not exists");
     }
 }

@@ -13,7 +13,6 @@ class Echarts
     protected $type = 'echarts';
     protected $name;
     protected $label;
-    protected $template_id;
     protected $echarts_type = '';
     protected $iterm = [];
 

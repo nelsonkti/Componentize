@@ -1,6 +1,6 @@
 <?php
 /**
- * 文件描述
+ * 显示组件
  *
  * @author nelsons
  * @time 2023-09-14 16:34:58
@@ -24,11 +24,27 @@ class Display
         'column' => Column::class,
     ];
 
+    /**
+     * 标题
+     *
+     * @param $title
+     * @return void
+     * @author 傅增耀
+     * @time 2023-09-18 10:06:52
+     */
     public function title($title)
     {
         $this->fields['title'] = $title;
     }
 
+    /**
+     * 消息描述
+     *
+     * @param $column
+     * @return void
+     * @author 傅增耀
+     * @time 2023-09-18 10:02:59
+     */
     public function message($column)
     {
         $this->fields['message'] = $column;
@@ -77,6 +93,6 @@ class Display
             return $element;
         }
 
-        Exception("Field type [$method] does not exists");
+        throw new \Exception("Field type [$method] does not exists");
     }
 }

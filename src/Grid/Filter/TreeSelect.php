@@ -34,6 +34,13 @@ class TreeSelect extends AbstractFilter implements RenderAble
         return $this;
     }
 
+    /**
+     * 是否多选
+     *
+     * @return $this
+     * @author 傅增耀
+     * @time 2023-09-18 10:02:19
+     */
     public function multiple(): self
     {
         $this->multiple = true;

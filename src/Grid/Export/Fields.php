@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 文件描述
+ * 字段
  *
  * @author nelsons
  * @time 2023-09-08 12:19:44
@@ -82,7 +82,7 @@ class Fields
             return $element;
         }
 
-        Exception("Field type [$method] does not exists");
+        throw new \Exception("Field type [$method] does not exists");
     }
 
 }

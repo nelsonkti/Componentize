@@ -25,6 +25,14 @@ class Cascader extends AbstractFilter implements RenderAble
         return $this;
     }
 
+    /**
+     * 请求链接
+     *
+     * @param $url
+     * @return $this
+     * @author 傅增耀
+     * @time 2023-09-18 10:00:32
+     */
     public function ajax($url): self
     {
         $this->ajax = $url;

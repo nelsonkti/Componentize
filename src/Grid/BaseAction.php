@@ -1,6 +1,6 @@
 <?php
 /**
- * 文件描述
+ * 基础 action
  *
  * @author nelsons
  * @time 2023-09-12 16:39:10

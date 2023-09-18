@@ -1,6 +1,6 @@
 <?php
 /**
- * 文件描述
+ * 导出组件
  *
  * @author nelsons
  * @time 2023-09-07 10:04:02
@@ -162,7 +162,7 @@ class Export
             return $element;
         }
 
-        Exception("Field type [$method] does not exists");
+        throw new \Exception("Field type [$method] does not exists");
     }
 
 

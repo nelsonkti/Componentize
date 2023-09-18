@@ -26,7 +26,6 @@ class Select extends AbstractFilter implements RenderAble
         return $this;
     }
 
-
     public function ajax($url): self
     {
         $this->ajax = $url;

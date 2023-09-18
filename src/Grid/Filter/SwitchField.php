@@ -17,6 +17,14 @@ class SwitchField extends AbstractFilter implements RenderAble
 
     protected $state;
 
+    /**
+     * 开关值
+     *
+     * @param $value
+     * @return $this
+     * @author 傅增耀
+     * @time 2023-09-18 10:01:38
+     */
     public function state($value): self
     {
         $this->state = $value;

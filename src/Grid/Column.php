@@ -180,11 +180,6 @@ class Column
         return $this;
     }
 
-    public function panel()
-    {
-
-    }
-
     public function render(): array
     {
         $res = [

@@ -26,20 +26,43 @@ class Field
         $this->label = $this->formatLabel($arguments) ?: $column;
     }
 
-    protected function formatLabel($arguments = [])
+    /**
+     * label 格式
+     *
+     * @param array $arguments
+     * @return mixed|string
+     * @author 傅增耀
+     * @time 2023-09-18 09:58:01
+     */
+    protected function formatLabel(array $arguments = [])
     {
         $column = is_array($this->column) ? current($this->column) : $this->column;
 
         return $arguments[0] ?? ucfirst($column);
     }
 
-
+    /**
+     * 规则
+     *
+     * @param $rule
+     * @return $this
+     * @author 傅增耀
+     * @time 2023-09-18 09:56:43
+     */
     public function rules($rule): self
     {
         $this->rule = $rule;
         return $this;
     }
 
+    /**
+     * 默认值
+     *
+     * @param $default
+     * @return $this
+     * @author 傅增耀
+     * @time 2023-09-18 09:57:52
+     */
     public function default($default): self
     {
         $this->default = $default;
@@ -47,6 +70,14 @@ class Field
         return $this;
     }
 
+    /**
+     * 输入框提示
+     *
+     * @param $value
+     * @return $this
+     * @author 傅增耀
+     * @time 2023-09-18 09:56:54
+     */
     public function placeholder($value): self
     {
         $this->placeholder = $value;
@@ -59,12 +90,27 @@ class Field
         return $this;
     }
 
-    public function required($isRequired = true): self
+    /**
+     * 是否必须
+     *
+     * @param bool $isRequired
+     * @return $this
+     * @author 傅增耀
+     * @time 2023-09-18 09:57:28
+     */
+    public function required(bool $isRequired = true): self
     {
         $this->required = $isRequired;
         return $this;
     }
 
+    /**
+     * 是否禁用
+     *
+     * @return $this
+     * @author 傅增耀
+     * @time 2023-09-18 09:57:16
+     */
     public function disable(): self
     {
         $this->disable = true;

@@ -15,5 +15,4 @@ use Nelsons\Componentize\RenderAble;
 class Text extends Field implements RenderAble
 {
     protected $type = 'input-text';
-
 }

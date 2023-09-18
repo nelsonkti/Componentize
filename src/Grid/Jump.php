@@ -29,6 +29,15 @@ class Jump extends Url implements RenderAble
         $this->label = $label;
     }
 
+    /**
+     * 跳转方式
+     *
+     * @param $target
+     * @return $this
+     * @throws \Exception
+     * @author 傅增耀
+     * @time 2023-09-18 10:10:54
+     */
     public function target($target): self
     {
         if (!in_array($target, $this->targetArr)) {

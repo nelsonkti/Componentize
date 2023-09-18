@@ -1,6 +1,6 @@
 <?php
 /**
- * 文件描述
+ * 过滤器
  *
  * @author nelsons
  * @time 2023-09-07 15:31:18
@@ -21,13 +21,28 @@ abstract class AbstractFilter
         $this->label = $this->formatLabel($arguments) ?: $column;
     }
 
+    /**
+     * 默认
+     *
+     * @param $value
+     * @return void
+     * @author 傅增耀
+     * @time 2023-09-18 09:59:22
+     */
     public function default($value)
     {
         $this->default = $value;
     }
 
-
-    protected function formatLabel($arguments = [])
+    /**
+     * label格式
+     *
+     * @param array $arguments
+     * @return mixed|string
+     * @author 傅增耀
+     * @time 2023-09-18 09:59:12
+     */
+    protected function formatLabel(array $arguments = [])
     {
         $column = is_array($this->column) ? current($this->column) : $this->column;
 
