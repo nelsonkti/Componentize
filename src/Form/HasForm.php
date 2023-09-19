@@ -8,7 +8,6 @@
 
 namespace Nelsons\Componentize\Form;
 
-
 use Nelsons\Componentize\Form;
 
 trait HasForm

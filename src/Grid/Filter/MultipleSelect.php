@@ -9,9 +9,6 @@
 namespace Nelsons\Componentize\Grid\Filter;
 
 use Nelsons\Componentize\Common\Transformer;
-use Nelsons\Componentize\Form\Field;
-use Nelsons\Componentize\Grid\Filter\AbstractFilter;
-use Nelsons\Componentize\Grid\Filter\Radio;
 use Nelsons\Componentize\RenderAble;
 
 class MultipleSelect extends AbstractFilter implements RenderAble

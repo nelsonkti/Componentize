@@ -8,7 +8,6 @@
 
 namespace Nelsons\Componentize\Grid;
 
-
 trait HasImport
 {
     /**

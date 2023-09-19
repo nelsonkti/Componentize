@@ -6,7 +6,7 @@
  * @time 2023-09-06 15:23:33
  */
 
-namespace Form\Field;
+namespace Nelsons\Componentize\Form\Field;
 
 use Nelsons\Componentize\Common\Transformer;
 use Nelsons\Componentize\Form\Field;

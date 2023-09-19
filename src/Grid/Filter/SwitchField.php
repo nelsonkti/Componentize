@@ -8,7 +8,6 @@
 
 namespace Nelsons\Componentize\Grid\Filter;
 
-use Nelsons\Componentize\Form\Field;
 use Nelsons\Componentize\RenderAble;
 
 class SwitchField extends AbstractFilter implements RenderAble

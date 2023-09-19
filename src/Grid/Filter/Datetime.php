@@ -8,7 +8,6 @@
 
 namespace Nelsons\Componentize\Grid\Filter;
 
-use Nelsons\Componentize\Form\Field;
 use Nelsons\Componentize\Grid\TimeFormatTrait;
 use Nelsons\Componentize\RenderAble;
 

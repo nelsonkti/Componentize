@@ -8,10 +8,10 @@
 
 namespace Nelsons\Componentize;
 
-use Form\Field\Checkbox;
-use Form\Field\Datetime;
-use Form\Field\DateTimeRange;
-use Form\Field\File;
+use Nelsons\Componentize\Form\Field\Checkbox;
+use Nelsons\Componentize\Form\Field\Datetime;
+use Nelsons\Componentize\Form\Field\DateTimeRange;
+use Nelsons\Componentize\Form\Field\File;
 use Nelsons\Componentize\Form\Field\Image;
 use Nelsons\Componentize\Form\Field\MultipleFile;
 use Nelsons\Componentize\Form\Field\MultipleImage;

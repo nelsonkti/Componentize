@@ -8,7 +8,6 @@
 
 namespace Nelsons\Componentize\Grid;
 
-use Nelsons\Componentize\Grid\Filter\Between;
 use Nelsons\Componentize\Grid\Filter\Cascader;
 use Nelsons\Componentize\Grid\Filter\Checkbox;
 use Nelsons\Componentize\Grid\Filter\Column;

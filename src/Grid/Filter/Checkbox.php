@@ -9,8 +9,6 @@
 namespace Nelsons\Componentize\Grid\Filter;
 
 use Nelsons\Componentize\Common\Transformer;
-use Nelsons\Componentize\Form\Field;
-use Nelsons\Componentize\Grid\Filter;
 use Nelsons\Componentize\RenderAble;
 
 class Checkbox extends AbstractFilter implements RenderAble

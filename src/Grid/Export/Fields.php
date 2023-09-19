@@ -24,7 +24,7 @@ use Nelsons\Componentize\Grid\Filter\SwitchField;
 /**
  * Class Filter.
  *
- * @method Checkbox            checkbox($column, $label = '')
+ * @method Checkbox  checkbox($column, $label = '')
  */
 class Fields
 {

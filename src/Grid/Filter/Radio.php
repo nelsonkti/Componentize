@@ -9,7 +9,6 @@
 namespace Nelsons\Componentize\Grid\Filter;
 
 use Nelsons\Componentize\Common\Transformer;
-use Nelsons\Componentize\Form\Field;
 use Nelsons\Componentize\RenderAble;
 
 class Radio extends AbstractFilter implements RenderAble

@@ -9,19 +9,16 @@
 namespace Nelsons\Componentize\Form\Field;
 
 use Nelsons\Componentize\Form\Field;
+use Nelsons\Componentize\Grid\TimeFormatTrait;
 use Nelsons\Componentize\RenderAble;
 
 class DatetimeRange extends Field implements RenderAble
 {
+    use TimeFormatTrait;
+
     protected $type = 'datetime-range';
 
     protected $format = 'YYYY-MM-DD HH:mm:ss';
-
-    public function format(string $value): self
-    {
-        $this->format = $value;
-        return $this;
-    }
 
     public function render(): array
     {

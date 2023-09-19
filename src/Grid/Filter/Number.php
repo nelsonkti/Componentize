@@ -8,8 +8,6 @@
 
 namespace Nelsons\Componentize\Grid\Filter;
 
-use Nelsons\Componentize\Form\Field;
-use Nelsons\Componentize\Grid\Filter\AbstractFilter;
 use Nelsons\Componentize\RenderAble;
 
 class Number extends AbstractFilter implements RenderAble
