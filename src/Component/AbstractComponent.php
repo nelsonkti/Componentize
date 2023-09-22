@@ -10,13 +10,13 @@ namespace Nelsons\Componentize\Common;
 
 abstract class AbstractComponent extends Component
 {
-    abstract public function list();
+    abstract protected function list();
 
-    abstract public function filter();
+    abstract protected function filter();
 
-    abstract public function action();
+    abstract protected function action();
 
-    abstract public function export();
+    abstract protected function export();
 
-    abstract public function import();
+    abstract protected function import();
 }

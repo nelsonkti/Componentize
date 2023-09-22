@@ -12,6 +12,9 @@ use Nelsons\Componentize\Grid;
 
 class Component implements ComponentInterface
 {
+    /**
+     * @var Grid
+     */
     public $grid;
 
     private $layout = ['list', 'action', 'filter', 'export', 'import'];
