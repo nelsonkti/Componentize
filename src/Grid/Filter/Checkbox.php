@@ -31,7 +31,7 @@ class Checkbox extends AbstractFilter implements RenderAble
      * 是否允许全选
      *
      * @return $this
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 10:00:50
      */
     public function canCheckAll(): self

@@ -38,7 +38,7 @@ class TreeSelect extends AbstractFilter implements RenderAble
      * 是否多选
      *
      * @return $this
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 10:02:19
      */
     public function multiple(): self

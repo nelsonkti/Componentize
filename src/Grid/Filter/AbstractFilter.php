@@ -8,12 +8,15 @@
 
 namespace Nelsons\Componentize\Grid\Filter;
 
+use Nelsons\Componentize\Form\Field;
+
 abstract class AbstractFilter
 {
     protected $column;
     protected $label;
     protected $type;
     protected $default;
+    protected $placeholder;
 
     public function __construct($column, $arguments = [])
     {
@@ -26,7 +29,7 @@ abstract class AbstractFilter
      *
      * @param $value
      * @return void
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 09:59:22
      */
     public function default($value)
@@ -39,7 +42,7 @@ abstract class AbstractFilter
      *
      * @param array $arguments
      * @return mixed|string
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 09:59:12
      */
     protected function formatLabel(array $arguments = [])
@@ -49,6 +52,20 @@ abstract class AbstractFilter
         return $arguments[0] ?? ucfirst($column);
     }
 
+    /**
+     * 输入框提示
+     *
+     * @param $value
+     * @return $this
+     * @author nelsons
+     * @time 2023-09-18 09:56:54
+     */
+    public function placeholder($value): self
+    {
+        $this->placeholder = $value;
+        return $this;
+    }
+
     public function render()
     {
         return [
@@ -56,6 +73,7 @@ abstract class AbstractFilter
             'label' => $this->label,
             'type' => $this->type,
             'default' => $this->default,
+            'placeholder' => $this->placeholder,
         ];
     }
 }

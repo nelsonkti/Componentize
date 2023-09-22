@@ -37,6 +37,18 @@ class Grid
     }
 
     /**
+     * 列表提示
+     *
+     * @param $name
+     * @author nelsons
+     * @time 2023-09-22 14:54:43
+     */
+    public function message($name)
+    {
+        $this->fields['list-message'] = $name;
+    }
+
+    /**
      * 字段
      *
      * @param $name

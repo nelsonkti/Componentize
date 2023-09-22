@@ -29,7 +29,7 @@ class Display
      *
      * @param $title
      * @return void
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 10:06:52
      */
     public function title($title)
@@ -42,7 +42,7 @@ class Display
      *
      * @param $column
      * @return void
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 10:02:59
      */
     public function message($column)

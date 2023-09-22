@@ -31,7 +31,7 @@ class Field
      *
      * @param array $arguments
      * @return mixed|string
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 09:58:01
      */
     protected function formatLabel(array $arguments = [])
@@ -46,7 +46,7 @@ class Field
      *
      * @param $rule
      * @return $this
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 09:56:43
      */
     public function rules($rule): self
@@ -60,7 +60,7 @@ class Field
      *
      * @param $default
      * @return $this
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 09:57:52
      */
     public function default($default): self
@@ -75,7 +75,7 @@ class Field
      *
      * @param $value
      * @return $this
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 09:56:54
      */
     public function placeholder($value): self
@@ -95,7 +95,7 @@ class Field
      *
      * @param bool $isRequired
      * @return $this
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 09:57:28
      */
     public function required(bool $isRequired = true): self
@@ -108,7 +108,7 @@ class Field
      * 是否禁用
      *
      * @return $this
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 09:57:16
      */
     public function disable(): self

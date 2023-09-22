@@ -17,6 +17,7 @@ class BaseAction
     protected $name = '';
     protected $type = '';
     protected $label = '';
+    protected $message = '';
     protected $fields = [];
 
     public function __construct($type, $name, $label)
@@ -82,7 +83,19 @@ class BaseAction
         call_user_func($callback, $this->form);
     }
 
-
+    /**
+     * 消息提示
+     *
+     * @param $message
+     * @return $this
+     * @author nelsons
+     * @time 2023-09-20 18:59:33
+     */
+    public function message($message): self
+    {
+        $this->message = $message;
+        return $this;
+    }
 
     public function render(): array
     {

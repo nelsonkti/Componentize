@@ -66,6 +66,20 @@ class Import
         'transfer' => Transfer::class,
     ];
 
+    /**
+     * 标题
+     *
+     * @param $title
+     * @return $this
+     * @author nelsons
+     * @time 2023-09-07 11:17:25
+     */
+    public function title($title): self
+    {
+        $this->fields['title'] = $title;
+        return $this;
+    }
+
 
     public function ajax($url): self
     {

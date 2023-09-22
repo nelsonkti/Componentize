@@ -35,7 +35,7 @@ class Jump extends Url implements RenderAble
      * @param $target
      * @return $this
      * @throws \Exception
-     * @author 傅增耀
+     * @author nelsons
      * @time 2023-09-18 10:10:54
      */
     public function target($target): self
