@@ -17,9 +17,6 @@ class Component implements ComponentInterface
      */
     public $grid;
 
-    private $layout = ['list', 'action', 'filter', 'export', 'import'];
-
-
     public function __construct()
     {
         $this->initGrid();
@@ -35,13 +32,26 @@ class Component implements ComponentInterface
         return method_exists($this, $method);
     }
 
+    private function getClassName(): string
+    {
+        return AbstractComponent::class;
+    }
+
+    private function getMethods(): array
+    {
+        $reflectionClass = new \ReflectionClass($this->getClassName());
+
+        return $reflectionClass->getMethods();
+    }
+
     private function run(): Grid
     {
-        foreach ($this->layout as $func) {
-            if (!$this->methodExists($func)) {
-                continue;
+        $className = $this->getClassName();
+        foreach ($this->getMethods() as $method) {
+            if ($method->getDeclaringClass()->getName() === $className) {
+                $methodName = $method->getName();
+                $this->$methodName();
             }
-            $this->$func();
         }
         return $this->grid;
     }

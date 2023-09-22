@@ -54,12 +54,12 @@ class Column
      * 标签
      *
      * @desc 颜色可选`danger`、`warning`、`info`、`primary`、`default`、`success`
-     * @param string $style
+     * @param string|array $style
      * @return $this
      * @author nelsons
      * @time 2023-09-11 15:33:14
      */
-    public function label(string $style = 'success'): self
+    public function label($style = 'success'): self
     {
         $this->type = 'label';
         $this->iterm['label_color'] = $style;
