@@ -6,7 +6,7 @@
  * @time 2023-09-22 15:02:17
  */
 
-namespace Nelsons\Componentize\Common;
+namespace Nelsons\Componentize\Component;
 
 use Nelsons\Componentize\Grid;
 

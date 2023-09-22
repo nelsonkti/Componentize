@@ -6,7 +6,7 @@
  * @time 2023-09-22 15:04:58
  */
 
-namespace Nelsons\Componentize\Common;
+namespace Nelsons\Componentize\Component;
 
 abstract class AbstractComponent extends Component
 {

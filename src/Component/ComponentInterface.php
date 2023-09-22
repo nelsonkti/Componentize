@@ -6,7 +6,7 @@
  * @time 2023-09-22 15:03:17
  */
 
-namespace Nelsons\Componentize\Common;
+namespace Nelsons\Componentize\Component;
 
 interface ComponentInterface
 {
