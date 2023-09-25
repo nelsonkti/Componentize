@@ -58,6 +58,7 @@ class Filter
         'switch' => SwitchField::class,
         'select' => Select::class,
         'multipleSelect' => MultipleSelect::class,
+        'toggle' => Toggle::class,
     ];
 
     /**
