@@ -27,11 +27,6 @@ class Component implements ComponentInterface
         $this->grid = new Grid();
     }
 
-    private function methodExists($method): bool
-    {
-        return method_exists($this, $method);
-    }
-
     private function getClassName(): string
     {
         return AbstractComponent::class;

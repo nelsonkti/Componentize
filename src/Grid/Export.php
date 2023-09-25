@@ -115,15 +115,17 @@ class Export
     /**
      * 导出字段
      *
+     * @param $label
      * @param \Closure $callback
      * @return void
      * @author nelsons
-     * @time 2023-09-13 18:21:57
+     * @time 2023-09-25 09:11:31
      */
-    public function fields(\Closure $callback)
+    public function fields($label, \Closure $callback)
     {
         call_user_func($callback, $this->exportFields);
-        $this->fields['fields'] = $this->exportFields->render();
+        $this->fields['fields']['label'] = $label;
+        $this->fields['fields']['columns'] = $this->exportFields->render();
     }
 
 
