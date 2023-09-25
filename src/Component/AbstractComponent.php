@@ -19,4 +19,6 @@ abstract class AbstractComponent extends Component
     abstract protected function export();
 
     abstract protected function import();
+
+    abstract protected function page();
 }

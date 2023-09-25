@@ -19,6 +19,7 @@ use Nelsons\Componentize\Grid\Filter\NumberRange;
 use Nelsons\Componentize\Grid\Filter\Radio;
 use Nelsons\Componentize\Grid\Filter\Select;
 use Nelsons\Componentize\Grid\Filter\SwitchField;
+use Nelsons\Componentize\Grid\Filter\Toggle;
 
 /**
  * Class Filter.
@@ -31,9 +32,10 @@ use Nelsons\Componentize\Grid\Filter\SwitchField;
  * @method Number              number($column, $label = '')
  * @method NumberRange         numberRange($column, $label = '')
  * @method Radio               radio($column, $label = '')
- * @method SwitchField         switch ($column, $label = '')
- * @method Select              select ($column, $label = '')
- * @method MultipleSelect      multipleSelect ($column, $label = '')
+ * @method SwitchField         switch($column, $label = '')
+ * @method Select              select($column, $label = '')
+ * @method MultipleSelect      multipleSelect($column, $label = '')
+ * @method Toggle              toggle($column, $label = '')
  */
 class Filter
 {

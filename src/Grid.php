@@ -154,6 +154,19 @@ class Grid
     }
 
     /**
+     * 页面选项卡组件
+     *
+     * @param array $pages
+     * @return void
+     * @author nelsons
+     * @time 2023-09-25 10:25:55
+     */
+    public function tabPages(array $pages)
+    {
+        $this->fields['tab-pages'] = $pages;
+    }
+
+    /**
      * 存入gird
      *
      * @param $name
@@ -181,6 +194,13 @@ class Grid
         return method_exists($object, 'render');
     }
 
+    /**
+     * 字段
+     *
+     * @return void
+     * @author nelsons
+     * @time 2023-09-25 10:13:59
+     */
     public function renderColumn()
     {
         foreach ($this->columns as $column) {
